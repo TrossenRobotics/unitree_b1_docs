@@ -109,9 +109,12 @@ Included in the docking stations are seven Ethernet ports, five USB Type-C ports
     3.  12V output: 3 channels 10A electric current in total, CHB channel 2 interfaces 485/CAN + CHA channel 1 interface CAN/485
     4.  5V output: 2 channels 5A electric current in total, CHB channel 1 interface 485/CAN + CHA channel 1 interface CAN/485
 
-.. Major Dimensions
-.. ================
+Major Dimensions
+================
 
-.. .. image:: specifications/images/go1_major_dimensions.png
-..     :align: center
+.. image:: specifications/images/go1_major_dimensions_side.png
+    :align: center
+
+.. image:: specifications/images/go1_major_dimensions_top.png
+    :align: center
 
