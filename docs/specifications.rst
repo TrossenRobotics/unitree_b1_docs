@@ -16,7 +16,7 @@ Packing List
 *   4x Foot End Caps
 *   2x 100cm XT30 (2+2) Power Cable
 *   1x 10cm Power and Ethernet Cable
-*   16 core convert to RJ45 / power / 485 junction box
+*   Power and Ethernet Cable Converter to RJ45 / 12V / 485
 *   3x XT30 (2+2) Waterproof Plug
 *   3x Power And Ethernet Cable Waterproof Plug
 *   USB Type-C Waterproof Plug
@@ -117,4 +117,3 @@ Major Dimensions
 
 .. image:: specifications/images/go1_major_dimensions_top.png
     :align: center
-
