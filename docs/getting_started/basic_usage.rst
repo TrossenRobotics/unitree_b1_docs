@@ -44,12 +44,12 @@ Press the power button on the controller once with a short press followed by ano
 Hold the second press until a beep is heard and the LEDs on the side of the controller turn on.
 The controller will automatically connect to the B1.
 
-See :doc:`Handheld Controller Operation<../operation/handheld>` for details.
+See :doc:`Handheld Controller Usage<../operation/handheld>` for details.
 
 Troubleshooting
 ---------------
 
-See the :doc:`Troubleshooting Startup<../troubleshooting>` page for details.
+See the :doc:`Troubleshooting<../troubleshooting>` page for details.
 
 Shutdown
 ========
