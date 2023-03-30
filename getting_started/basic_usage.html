@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>B1 Basic Usage &mdash; Unitree B1 Documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/graphviz.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/tabs.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/tr_style.css" type="text/css" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/clipboard.min.js"></script>
+        <script src="../_static/copybutton.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Network Setup" href="network.html" />
+    <link rel="prev" title="Getting Started" href="../getting_started.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+  <div class="sidebartitle-docs-home">
+    <a href="https://docs.trossenrobotics.com/" target="_blank" class="icon icon-home">
+      &nbsp;Trossen Robotics Docs Home
+    </a>
+    <div class="sidebartitle-docs-home-hr">
+      <hr>
+    </div>
+  </div>
+  
+
+          
+          
+          <a href="../index.html">
+            
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../getting_started.html">Getting Started</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">B1 Basic Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="network.html">Network Setup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="legged_sdk.html">Legged SDK</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ros.html">ROS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="camera_sdk.html">Unitree Camera SDK</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../operation.html">Operation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../specifications.html">Specifications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../downloads.html">Downloads</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting.html">Troubleshooting</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Unitree B1 Documentation</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../getting_started.html">Getting Started</a></li>
+      <li class="breadcrumb-item active">B1 Basic Usage</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/TrossenRobotics/unitree_b1_docs/blob/main/docs/getting_started/basic_usage.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="b1-basic-usage">
+<h1>B1 Basic Usage<a class="headerlink" href="#b1-basic-usage" title="Permalink to this headline"></a></h1>
+<div class="contents local topic" id="contents">
+<ul class="simple">
+<li><a class="reference internal" href="#startup" id="id1">Startup</a><ul>
+<li><a class="reference internal" href="#installing-battery-pack" id="id2">Installing Battery Pack</a></li>
+<li><a class="reference internal" href="#startup-pose" id="id3">Startup Pose</a></li>
+<li><a class="reference internal" href="#powering-on-the-robot" id="id4">Powering On The Robot</a></li>
+<li><a class="reference internal" href="#powering-on-the-handheld-controller" id="id5">Powering on the Handheld Controller</a></li>
+<li><a class="reference internal" href="#troubleshooting" id="id6">Troubleshooting</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#shutdown" id="id7">Shutdown</a><ul>
+<li><a class="reference internal" href="#powering-off-the-robot" id="id8">Powering Off The Robot</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="startup">
+<h2><a class="toc-backref" href="#id1">Startup</a><a class="headerlink" href="#startup" title="Permalink to this headline"></a></h2>
+<div class="section" id="installing-battery-pack">
+<h3><a class="toc-backref" href="#id2">Installing Battery Pack</a><a class="headerlink" href="#installing-battery-pack" title="Permalink to this headline"></a></h3>
+<p>Make sure the battery pack is fully charged.
+Place the B1 on a flat surface.
+Insert the battery into the side of the robot.
+The battery can only be fully inserted one way; if it cannot be inserted, flip it over and try again.
+The battery should click into place and is not fully installed if no click is heard.</p>
+<img alt="../_images/battery_in.png" class="align-center" src="../_images/battery_in.png" />
+</div>
+<div class="section" id="startup-pose">
+<span id="label-basic-usage-startup-pose"></span><h3><a class="toc-backref" href="#id3">Startup Pose</a><a class="headerlink" href="#startup-pose" title="Permalink to this headline"></a></h3>
+<p>In order for the robot to boot properly, it must be in its startup pose before being powered on.
+The robot must be flat on its belly with its legs out to the side and have its feet and knees touching the ground.</p>
+<img alt="../_images/startup_pose.png" class="align-center" src="../_images/startup_pose.png" />
+</div>
+<div class="section" id="powering-on-the-robot">
+<h3><a class="toc-backref" href="#id4">Powering On The Robot</a><a class="headerlink" href="#powering-on-the-robot" title="Permalink to this headline"></a></h3>
+<p>With the battery inserted into the robot, press the button on the battery once with a short press followed by another long press.
+Hold the second press until the lights flash and you hear the fans on the robot start up.</p>
+</div>
+<div class="section" id="powering-on-the-handheld-controller">
+<h3><a class="toc-backref" href="#id5">Powering on the Handheld Controller</a><a class="headerlink" href="#powering-on-the-handheld-controller" title="Permalink to this headline"></a></h3>
+<p>Press the power button on the controller once with a short press followed by another long press.
+Hold the second press until a beep is heard and the LEDs on the side of the controller turn on.
+The controller will automatically connect to the B1.</p>
+<p>See <a class="reference internal" href="../operation/handheld.html"><span class="doc">Handheld Controller Operation</span></a> for details.</p>
+</div>
+<div class="section" id="troubleshooting">
+<h3><a class="toc-backref" href="#id6">Troubleshooting</a><a class="headerlink" href="#troubleshooting" title="Permalink to this headline"></a></h3>
+<p>See the <a class="reference internal" href="../troubleshooting.html"><span class="doc">Troubleshooting Startup</span></a> page for details.</p>
+</div>
+</div>
+<div class="section" id="shutdown">
+<h2><a class="toc-backref" href="#id7">Shutdown</a><a class="headerlink" href="#shutdown" title="Permalink to this headline"></a></h2>
+<div class="section" id="powering-off-the-robot">
+<h3><a class="toc-backref" href="#id8">Powering Off The Robot</a><a class="headerlink" href="#powering-off-the-robot" title="Permalink to this headline"></a></h3>
+<p>Walk the B1 to a flat surface.</p>
+<p>Do the following operations using the handheld controller in order:</p>
+<ol class="arabic simple">
+<li>On the handheld, press <kbd class="kbd docutils literal notranslate">L2</kbd> + <kbd class="kbd docutils literal notranslate">A</kbd> to lock the robot’s joints.</li>
+<li>On the handheld, press <kbd class="kbd docutils literal notranslate">L2</kbd> + <kbd class="kbd docutils literal notranslate">A</kbd> again to make the robot lie down.</li>
+<li>Once on the ground, press the power button on the battery once with a short press followed by another long press.</li>
+<li>Hold the second press until the lights on the robot turn off.</li>
+<li>Remove the battery from the robot.</li>
+</ol>
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../getting_started.html" class="btn btn-neutral float-left" title="Getting Started" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="network.html" class="btn btn-neutral float-right" title="Network Setup" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Trossen Robotics.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  
+     
+
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
