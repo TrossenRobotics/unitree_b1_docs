@@ -95,7 +95,8 @@
 <ul class="simple">
 <li><a class="reference internal" href="#packing-list" id="id1">Packing List</a></li>
 <li><a class="reference internal" href="#specifications-overview" id="id2">Specifications Overview</a><ul>
-<li><a class="reference internal" href="#docking-station" id="id3">Docking Station</a></li>
+<li><a class="reference internal" href="#physical-specifications" id="id3">Physical Specifications</a></li>
+<li><a class="reference internal" href="#docking-station" id="id4">Docking Station</a></li>
 </ul>
 </li>
 </ul>
@@ -122,8 +123,62 @@
 </div>
 <div class="section" id="specifications-overview">
 <h2><a class="toc-backref" href="#id2">Specifications Overview</a><a class="headerlink" href="#specifications-overview" title="Permalink to this headline"></a></h2>
+<div class="section" id="physical-specifications">
+<h3><a class="toc-backref" href="#id3">Physical Specifications</a><a class="headerlink" href="#physical-specifications" title="Permalink to this headline"></a></h3>
+<table border="1" class="colwidths-given docutils align-center">
+<colgroup>
+<col width="40%" />
+<col width="60%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>Size</td>
+<td><ul class="first last simple">
+<li>Standing: 1108mm x 461mm x 671mm</li>
+<li>Folded: 964mm x 461mm x 275mm</li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td>Weight</td>
+<td>50kg</td>
+</tr>
+<tr class="row-odd"><td>Max Walking (Continuous Working Load) Payload</td>
+<td>40kg</td>
+</tr>
+<tr class="row-even"><td>Max Standing (Maximum Working Load) Payload</td>
+<td>104kg</td>
+</tr>
+<tr class="row-odd"><td>Max Speed</td>
+<td>1.8m/s</td>
+</tr>
+<tr class="row-even"><td>Operating Time</td>
+<td>2-4h</td>
+</tr>
+<tr class="row-odd"><td>Climbable Stair Height</td>
+<td>20cm</td>
+</tr>
+<tr class="row-even"><td>Climbable Slope</td>
+<td>35°</td>
+</tr>
+<tr class="row-odd"><td>External Interfaces</td>
+<td>6x Gigabit Ethernet Ports, 4x RS485 Ports, 5x USB Type-C Ports, 4x CAN ports</td>
+</tr>
+<tr class="row-even"><td>External Power Interfaces</td>
+<td>5V, 12V, 24V, 51V (Battery)</td>
+</tr>
+<tr class="row-odd"><td>Visual Sensors</td>
+<td>5x Stereo Depth Cameras</td>
+</tr>
+<tr class="row-even"><td>Internal Computers</td>
+<td>3x Jetson Xavier NX</td>
+</tr>
+<tr class="row-odd"><td>Ingress Protection Rating</td>
+<td>IP68</td>
+</tr>
+</tbody>
+</table>
+</div>
 <div class="section" id="docking-station">
-<h3><a class="toc-backref" href="#id3">Docking Station</a><a class="headerlink" href="#docking-station" title="Permalink to this headline"></a></h3>
+<h3><a class="toc-backref" href="#id4">Docking Station</a><a class="headerlink" href="#docking-station" title="Permalink to this headline"></a></h3>
 <p>The top of the robot provides breakouts for networking devices, serial devices, and power.</p>
 <div class="no-table docutils container">
 <table border="1" class="docutils align-center">
@@ -164,14 +219,14 @@
 <ul class="simple">
 <li>2x8PIN Gigabit Ethernet Interface+12V Power Supply+485/CAN (Pass-through) Interface:<ol class="arabic">
 <li>Total number of interfaces: 8 (2x8PIN waterproof interfaces)</li>
-<li>Gigabit Ethernet: 1 channel is connected to the robot dog Mini PC, 7 channels are connected to external</li>
+<li>Gigabit Ethernet: 1 channel is connected to the robot Mini PC, 7 channels are connected to external</li>
 <li>Power Output: 12V x 7 channels, 10A electric current in total (same path as external power supply)</li>
 <li>485/CAN (Pass-through): 3-Interface CHA channel 485/CAN, 3-interface CHB channel 485/CAN</li>
 </ol>
 </li>
 <li>Type-C USB2.0 Interface:<ol class="arabic">
 <li>Total number of interfaces: 6 interfaces (Type-C waterproof interface)</li>
-<li>7-channel USB-HUB: The generatrix is connected to the robot dog MINIPC. 5 channels are connected to the external; 2 channels are connected to 2 groups of USB, and then transfer to 485 (or CAN) Pass-through modules: CHA/CHB</li>
+<li>7-channel USB-HUB: The generatrix is connected to the robot Mini PC. 5 channels are connected to the external; 2 channels are connected to 2 groups of USB, and then transfer to 485 (or CAN) Pass-through modules: CHA/CHB</li>
 <li>Power output: 5V/1A x 5 channels (USB power supply is independent of external power supply)</li>
 </ol>
 </li>

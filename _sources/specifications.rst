@@ -27,6 +27,41 @@ Packing List
 Specifications Overview
 =======================
 
+Physical Specifications
+-----------------------
+
+.. list-table::
+    :align: center
+    :widths: 40 60
+
+    * - Size
+      - *   Standing: 1108mm x 461mm x 671mm
+        *   Folded: 964mm x 461mm x 275mm
+    * - Weight
+      - 50kg
+    * - Max Walking (Continuous Working Load) Payload
+      - 40kg
+    * - Max Standing (Maximum Working Load) Payload
+      - 104kg
+    * - Max Speed
+      - 1.8m/s
+    * - Operating Time
+      - 2-4h
+    * - Climbable Stair Height
+      - 20cm
+    * - Climbable Slope
+      - 35°
+    * - External Interfaces
+      - 6x Gigabit Ethernet Ports, 4x RS485 Ports, 5x USB Type-C Ports, 4x CAN ports
+    * - External Power Interfaces
+      - 5V, 12V, 24V, 51V (Battery)
+    * - Visual Sensors
+      - 5x Stereo Depth Cameras
+    * - Internal Computers
+      - 3x Jetson Xavier NX
+    * - Ingress Protection Rating
+      - IP68
+
 Docking Station
 ---------------
 
@@ -57,14 +92,14 @@ Included in the docking stations are seven Ethernet ports, five USB Type-C ports
 *   2x8PIN Gigabit Ethernet Interface+12V Power Supply+485/CAN (Pass-through) Interface:
 
     1.  Total number of interfaces: 8 (2x8PIN waterproof interfaces)
-    2.  Gigabit Ethernet: 1 channel is connected to the robot dog Mini PC, 7 channels are connected to external
+    2.  Gigabit Ethernet: 1 channel is connected to the robot Mini PC, 7 channels are connected to external
     3.  Power Output: 12V x 7 channels, 10A electric current in total (same path as external power supply)
     4.  485/CAN (Pass-through): 3-Interface CHA channel 485/CAN, 3-interface CHB channel 485/CAN
 
 *   Type-C USB2.0 Interface:
 
     1.  Total number of interfaces: 6 interfaces (Type-C waterproof interface)
-    2.  7-channel USB-HUB: The generatrix is connected to the robot dog MINIPC. 5 channels are connected to the external; 2 channels are connected to 2 groups of USB, and then transfer to 485 (or CAN) Pass-through modules: CHA/CHB
+    2.  7-channel USB-HUB: The generatrix is connected to the robot Mini PC. 5 channels are connected to the external; 2 channels are connected to 2 groups of USB, and then transfer to 485 (or CAN) Pass-through modules: CHA/CHB
     3.  Power output: 5V/1A x 5 channels (USB power supply is independent of external power supply)
 
 *   XT30(2+2) power supply +485/CAN (Pass-through) interface:
