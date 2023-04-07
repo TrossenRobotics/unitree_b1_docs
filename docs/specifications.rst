@@ -112,8 +112,8 @@ Included in the docking stations are seven Ethernet ports, five USB Type-C ports
 Major Dimensions
 ================
 
-.. image:: specifications/images/go1_major_dimensions_side.png
+.. image:: specifications/images/b1_major_dimensions_side.png
     :align: center
 
-.. image:: specifications/images/go1_major_dimensions_top.png
+.. image:: specifications/images/b1_major_dimensions_top.png
     :align: center
