@@ -9,4 +9,3 @@ Getting Started
     ./getting_started/network.rst
     ./getting_started/legged_sdk.rst
     ./getting_started/ros.rst
-    ./getting_started/camera_sdk.rst
